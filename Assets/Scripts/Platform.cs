@@ -25,7 +25,15 @@ public class Platform : MonoBehaviour
     void SpawnPlatform()
     {
         GameObject newplat = Instantiate(platform);
-        newplat.transform.position = platspawn.transform.position;
+
+        int randheight = Random.Range(1, 3);
+        float height = 0;
+        if (randheight == 1)
+        {
+            height = -2.5f;
+        }
+
+        newplat.transform.position = new Vector2(platspawn.transform.position.x, height);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
