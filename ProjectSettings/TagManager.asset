@@ -5,11 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlatEater
+  - Ground
+  - Death
+  - PlatSpawn
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player's
   - Water
   - UI
   - 
